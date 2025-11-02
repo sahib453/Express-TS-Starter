@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",  // Extend from the main tsconfig
+  "compilerOptions": {
+    "outDir": "./dist",  // Making sure it points to 'dist'
+    "rootDir": "./src",  // Source files should be in 'src'
+    "declaration": true, // Generate .d.ts files
+    "sourceMap": true    // Generate .map files for debugging
+  },
+  "include": ["src/**/*"], 
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"] 
+}

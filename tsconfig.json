@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",             // Ensure the base URL is set to the project root
+    "paths": {
+      "#*": ["src/*"]           // Set the alias for your paths (for example, #core => src/core)
+    },
+    "moduleResolution": "node", // Use Node.js resolution for modules
+    "outDir": "./dist",         // The output directory for compiled files
+    "rootDir": "./src",         // The root directory of your source files
+    "module": "ESNext",         // Use ESNext modules for compatibility
+    "target": "ESNext",         // Target ESNext for modern JavaScript
+    "esModuleInterop": true     // Allow default imports from non-ES modules
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

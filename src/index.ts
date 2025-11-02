@@ -1,0 +1,12 @@
+import hello from "#utils/hello.js";
+import express from "express";
+const app = express();
+const port = process.env.PORT 
+
+app.get("/", (req, res) => {
+  res.send(hello());
+});
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
